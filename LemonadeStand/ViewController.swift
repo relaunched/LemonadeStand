@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var cashOnHand = 10
+    var lemonInventory = 1
+    var iceCubeInventory = 1
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
