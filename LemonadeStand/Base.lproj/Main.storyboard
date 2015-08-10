@@ -127,11 +127,19 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOm-LW-FF0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="+" id="TYc-RO-Nxc"/>
+                                    <barButtonItem title="+" id="TYc-RO-Nxc">
+                                        <connections>
+                                            <action selector="addLemonForTwoDollars:" destination="BYZ-38-t0r" id="Obr-26-EMW"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="27" style="plain" systemItem="fixedSpace" id="RCz-wE-yjQ"/>
                                     <barButtonItem title="0" style="plain" id="PM7-Ds-fm3"/>
                                     <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="FbY-bT-K4x"/>
-                                    <barButtonItem title="-" id="HNA-pP-3Kn"/>
+                                    <barButtonItem title="-" id="HNA-pP-3Kn">
+                                        <connections>
+                                            <action selector="subtractLemonForTwoDollars:" destination="BYZ-38-t0r" id="67E-Ae-RNu"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="181" y="197" width="130" height="44"/>
@@ -140,11 +148,19 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTS-8C-nAJ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="+" id="nZk-k0-byS"/>
+                                    <barButtonItem title="+" id="nZk-k0-byS">
+                                        <connections>
+                                            <action selector="addLemonPreferred:" destination="BYZ-38-t0r" id="b9l-G1-gsB"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="27" style="plain" systemItem="fixedSpace" id="LsF-qH-1Zy"/>
                                     <barButtonItem title="0" style="plain" id="BFV-s6-MGl"/>
                                     <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="VZj-Vi-hbw"/>
-                                    <barButtonItem title="-" id="I3E-8H-SFl"/>
+                                    <barButtonItem title="-" id="I3E-8H-SFl">
+                                        <connections>
+                                            <action selector="subtractLemonPreferred:" destination="BYZ-38-t0r" id="XFj-ai-W8u"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="181" y="348" width="130" height="44"/>
@@ -153,11 +169,19 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-LX-WLO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="+" id="kgh-vU-gNN"/>
+                                    <barButtonItem title="+" id="kgh-vU-gNN">
+                                        <connections>
+                                            <action selector="addIceCubePreferred:" destination="BYZ-38-t0r" id="fID-hO-lUE"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="27" style="plain" systemItem="fixedSpace" id="F9C-Wk-9Pj"/>
                                     <barButtonItem title="0" style="plain" id="Y9N-W5-haQ"/>
                                     <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="pE7-Db-wub"/>
-                                    <barButtonItem title="-" id="jQC-db-eeL"/>
+                                    <barButtonItem title="-" id="jQC-db-eeL">
+                                        <connections>
+                                            <action selector="subtractIceCubePreferred:" destination="BYZ-38-t0r" id="A0t-VA-g8G"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="181" y="401" width="130" height="44"/>
@@ -166,11 +190,19 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TJ-wz-hvI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="+" id="efl-qs-jF6"/>
+                                    <barButtonItem title="+" id="efl-qs-jF6">
+                                        <connections>
+                                            <action selector="addIceCubeForOneDollar:" destination="BYZ-38-t0r" id="TTz-Ku-47D"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="27" style="plain" systemItem="fixedSpace" id="RQb-VT-Kr3"/>
                                     <barButtonItem title="0" style="plain" id="YMl-Fc-UY4"/>
                                     <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="Dx1-NM-sto"/>
-                                    <barButtonItem title="-" id="qyL-MA-Lga"/>
+                                    <barButtonItem title="-" id="qyL-MA-Lga">
+                                        <connections>
+                                            <action selector="subtractIceCubeForOneDollar:" destination="BYZ-38-t0r" id="fi1-M4-0IP"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="181" y="246" width="130" height="44"/>
@@ -195,6 +227,19 @@
                                     <rect key="frame" x="94" y="454" width="241" height="79"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-F3-Ys4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Day">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="526" width="79" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="startDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qkb-QZ-JbZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -217,6 +262,7 @@
                                 <exclude reference="0TJ-wz-hvI"/>
                                 <exclude reference="PMM-Ks-WmW"/>
                                 <exclude reference="cyj-jb-W5A"/>
+                                <exclude reference="7Fq-F3-Ys4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -239,11 +285,17 @@
                                 <include reference="0TJ-wz-hvI"/>
                                 <include reference="PMM-Ks-WmW"/>
                                 <include reference="cyj-jb-W5A"/>
+                                <include reference="7Fq-F3-Ys4"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="numberOfIceCubesForOneDollar" destination="YMl-Fc-UY4" id="ozo-Uz-XVZ"/>
+                        <outlet property="numberOfIceCubesPreferred" destination="Y9N-W5-haQ" id="5kS-Gn-RCe"/>
+                        <outlet property="numberOfLemonsPreferred" destination="BFV-s6-MGl" id="Ypb-9h-3x9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
