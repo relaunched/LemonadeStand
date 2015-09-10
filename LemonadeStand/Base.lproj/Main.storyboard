@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -19,7 +19,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6s-Ac-jc6">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="-89" y="61" width="42" height="21"/>
@@ -46,7 +46,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Lemons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-RC-s4F">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="179" y="71" width="76" height="21"/>
@@ -55,7 +55,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Ice Cubes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn0-pj-rQX">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="181" y="100" width="92" height="21"/>
@@ -91,7 +91,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons for $2:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpE-1U-w5s">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="46" y="205" width="116" height="21"/>
@@ -100,7 +100,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lemons:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTg-4Q-dpH">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="94" y="348" width="66" height="21"/>
@@ -109,7 +109,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice Cubes:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIH-C9-LEE">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="77" y="401" width="83" height="21"/>
@@ -118,33 +118,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice Cubes for $1:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-Au-Y27">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="28" y="252" width="132" height="21"/>
                                 </variation>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOm-LW-FF0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem title="+" id="TYc-RO-Nxc">
-                                        <connections>
-                                            <action selector="addLemonForTwoDollars:" destination="BYZ-38-t0r" id="Obr-26-EMW"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem width="27" style="plain" systemItem="fixedSpace" id="RCz-wE-yjQ"/>
-                                    <barButtonItem title="0" style="plain" id="PM7-Ds-fm3"/>
-                                    <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="FbY-bT-K4x"/>
-                                    <barButtonItem title="-" id="HNA-pP-3Kn">
-                                        <connections>
-                                            <action selector="subtractLemonForTwoDollars:" destination="BYZ-38-t0r" id="67E-Ae-RNu"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="181" y="197" width="130" height="44"/>
-                                </variation>
-                            </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTS-8C-nAJ">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
@@ -211,7 +190,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do your customers prefer more ice or more lemons today?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMM-Ks-WmW">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="94" y="288" width="274" height="79"/>
@@ -221,7 +200,7 @@
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <string key="text">At the end of the day you will either make or lose money. If you don't have enough money to buy new inventory then you lose the game.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="94" y="454" width="241" height="79"/>
@@ -240,6 +219,27 @@
                                     <action selector="startDay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qkb-QZ-JbZ"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOm-LW-FF0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="+" id="TYc-RO-Nxc">
+                                        <connections>
+                                            <action selector="addLemonForTwoDollars:" destination="BYZ-38-t0r" id="Obr-26-EMW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="27" style="plain" systemItem="fixedSpace" id="RCz-wE-yjQ"/>
+                                    <barButtonItem title="0" style="plain" id="PM7-Ds-fm3"/>
+                                    <barButtonItem width="30" style="plain" systemItem="fixedSpace" id="FbY-bT-K4x"/>
+                                    <barButtonItem title="-" id="HNA-pP-3Kn">
+                                        <connections>
+                                            <action selector="subtractLemonForTwoDollars:" destination="BYZ-38-t0r" id="67E-Ae-RNu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="181" y="197" width="130" height="44"/>
+                                </variation>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -256,13 +256,13 @@
                                 <exclude reference="oTg-4Q-dpH"/>
                                 <exclude reference="EIH-C9-LEE"/>
                                 <exclude reference="oc8-Au-Y27"/>
-                                <exclude reference="aOm-LW-FF0"/>
                                 <exclude reference="uTS-8C-nAJ"/>
                                 <exclude reference="6Ff-LX-WLO"/>
                                 <exclude reference="0TJ-wz-hvI"/>
                                 <exclude reference="PMM-Ks-WmW"/>
                                 <exclude reference="cyj-jb-W5A"/>
                                 <exclude reference="7Fq-F3-Ys4"/>
+                                <exclude reference="aOm-LW-FF0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -279,22 +279,26 @@
                                 <include reference="oTg-4Q-dpH"/>
                                 <include reference="EIH-C9-LEE"/>
                                 <include reference="oc8-Au-Y27"/>
-                                <include reference="aOm-LW-FF0"/>
                                 <include reference="uTS-8C-nAJ"/>
                                 <include reference="6Ff-LX-WLO"/>
                                 <include reference="0TJ-wz-hvI"/>
                                 <include reference="PMM-Ks-WmW"/>
                                 <include reference="cyj-jb-W5A"/>
                                 <include reference="7Fq-F3-Ys4"/>
+                                <include reference="aOm-LW-FF0"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="numberOfIceCubesForOneDollar" destination="YMl-Fc-UY4" id="ozo-Uz-XVZ"/>
+                        <outlet property="dailyPurchaseOfIceLabel" destination="YMl-Fc-UY4" id="hLS-ta-Gm7"/>
+                        <outlet property="dailyPurchaseOfLemonsLabel" destination="PM7-Ds-fm3" id="lcu-ZZ-5V5"/>
                         <outlet property="numberOfIceCubesPreferred" destination="Y9N-W5-haQ" id="5kS-Gn-RCe"/>
                         <outlet property="numberOfLemonsPreferred" destination="BFV-s6-MGl" id="Ypb-9h-3x9"/>
+                        <outlet property="totalDollars" destination="IL5-3o-5wX" id="o1e-Mc-Top"/>
+                        <outlet property="totalIceCubes" destination="fn0-pj-rQX" id="SZN-j4-zze"/>
+                        <outlet property="totalLemons" destination="NqQ-RC-s4F" id="yTM-pa-JTp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
