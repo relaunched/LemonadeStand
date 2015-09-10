@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var lemonMixSubTotal = 0
     var iceMixSubTotal = 0
     
-    var lemonadeRatio = 0
+    var lemonadeRatio = 0.0
     
     //UI Elements
    
@@ -115,8 +115,15 @@ class ViewController: UIViewController {
         lemonInventory = lemonInventory + lemonInventorySubTotal
         iceCubeInventory = iceCubeInventory + iceCubeInventorySubTotal
         cashOnHand = cashOnHand - (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
-        lemonadeRatio = lemonMixSubTotal / iceMixSubTotal
+        lemonadeRatio = Double(lemonMixSubTotal) / Double(iceMixSubTotal)
+        
         println("\(lemonInventory)", "\(iceCubeInventory)", "\(cashOnHand)", "\(lemonadeRatio)")
+    }
+    
+    func updateDailyTotals() {
+        totalDollars.text = "\(cashOnHand)"
+        totalLemons.text = "\(lemonInventory)"
+        totalIceCubes.text = "\(iceCubeInventory)"
     }
 }
 
