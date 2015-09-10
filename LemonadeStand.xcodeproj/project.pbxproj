@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E782B4B1BA1C0940012A56F /* customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782B4A1BA1C0940012A56F /* customer.swift */; };
 		2EF89CDC1B6FB6C1003AF06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF89CDB1B6FB6C1003AF06A /* AppDelegate.swift */; };
 		2EF89CDE1B6FB6C1003AF06A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF89CDD1B6FB6C1003AF06A /* ViewController.swift */; };
 		2EF89CE11B6FB6C1003AF06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF89CDF1B6FB6C1003AF06A /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E782B4A1BA1C0940012A56F /* customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customer.swift; sourceTree = "<group>"; };
 		2EF89CD61B6FB6C1003AF06A /* LemonadeStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF89CDA1B6FB6C1003AF06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF89CDB1B6FB6C1003AF06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		2EF89CD81B6FB6C1003AF06A /* LemonadeStand */ = {
 			isa = PBXGroup;
 			children = (
+				2E782B4A1BA1C0940012A56F /* customer.swift */,
 				2EF89CDB1B6FB6C1003AF06A /* AppDelegate.swift */,
 				2EF89CDD1B6FB6C1003AF06A /* ViewController.swift */,
 				2EF89CDF1B6FB6C1003AF06A /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				2EF89CDE1B6FB6C1003AF06A /* ViewController.swift in Sources */,
 				2EF89CDC1B6FB6C1003AF06A /* AppDelegate.swift in Sources */,
+				2E782B4B1BA1C0940012A56F /* customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				2EF89CF71B6FB6C1003AF06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EF89CF81B6FB6C1003AF06A /* Build configuration list for PBXNativeTarget "LemonadeStandTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				2EF89CFA1B6FB6C1003AF06A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var lemonMixSubTotal = 0
     var iceMixSubTotal = 0
     
+    var lemonadeRatio = 0
+    
     //UI Elements
    
     @IBOutlet weak var totalDollars: UILabel!
@@ -112,7 +114,9 @@ class ViewController: UIViewController {
         
         lemonInventory = lemonInventory + lemonInventorySubTotal
         iceCubeInventory = iceCubeInventory + iceCubeInventorySubTotal
-        println("\(lemonInventory)", "\(iceCubeInventory)")
+        cashOnHand = cashOnHand - (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
+        lemonadeRatio = lemonMixSubTotal / iceMixSubTotal
+        println("\(lemonInventory)", "\(iceCubeInventory)", "\(cashOnHand)", "\(lemonadeRatio)")
     }
 }
 
