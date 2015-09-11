@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+class Customer {
+    
+    let preferenceMixRatio = Int(arc4random_uniform(UInt32(11))) / 10
+}

@@ -111,19 +111,51 @@ class ViewController: UIViewController {
 
     
     @IBAction func startDay(sender: AnyObject) {
+//        enoughMoneyForTheOrder()
         
-        lemonInventory = lemonInventory + lemonInventorySubTotal
-        iceCubeInventory = iceCubeInventory + iceCubeInventorySubTotal
-        cashOnHand = cashOnHand - (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
-        lemonadeRatio = Double(lemonMixSubTotal) / Double(iceMixSubTotal)
+        if cashOnHand >= (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal) {
+            
+            lemonInventory = lemonInventory + lemonInventorySubTotal
+            iceCubeInventory = iceCubeInventory + iceCubeInventorySubTotal
+            cashOnHand = cashOnHand - (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
+            lemonadeRatio = Double(lemonMixSubTotal) / Double(iceMixSubTotal)
+            updateDailyTotals()
+        }
         
-        println("\(lemonInventory)", "\(iceCubeInventory)", "\(cashOnHand)", "\(lemonadeRatio)")
+        else {
+            
+            showAlertWithText(header: "Warning", message: "You don't have enought money to complete your purchase. Please adjust your purchase order accordingly.")
+            
+        }
+        
+        
+//        println("\(lemonInventory)", "\(iceCubeInventory)", "\(cashOnHand)", "\(lemonadeRatio)")
     }
     
     func updateDailyTotals() {
-        totalDollars.text = "\(cashOnHand)"
-        totalLemons.text = "\(lemonInventory)"
-        totalIceCubes.text = "\(iceCubeInventory)"
+        
+        
+        totalDollars.text = "$\(cashOnHand)"
+        totalLemons.text = "\(lemonInventory) Lemons"
+        totalIceCubes.text = "\(iceCubeInventory) Ice Cubes"
+    }
+    
+//    func enoughMoneyForTheOrder() ->Bool {
+//        if cashOnHand >= (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal){
+//        return true
+//        }
+//        else {
+//            return false
+//        }
+//    
+//    }
+    
+    func showAlertWithText(header: String = "Warning", message: String) {
+        
+        var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }
 
