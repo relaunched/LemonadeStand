@@ -113,12 +113,28 @@ class ViewController: UIViewController {
     @IBAction func startDay(sender: AnyObject) {
 //        enoughMoneyForTheOrder()
         
+        
+        
         if cashOnHand >= (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal) {
+            
+            var todaysCustomers: [Double] = []
+            var customer = 0.0
+            
+            let customersToday = Int(arc4random_uniform(UInt32(11)))
             
             lemonInventory = lemonInventory + lemonInventorySubTotal
             iceCubeInventory = iceCubeInventory + iceCubeInventorySubTotal
             cashOnHand = cashOnHand - (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
             lemonadeRatio = Double(lemonMixSubTotal) / Double(iceMixSubTotal)
+            
+            for var x = 1; x < (customersToday + 1); x++ {
+                customer = (Double(arc4random_uniform(UInt32(11))) / Double(10))
+                todaysCustomers.append(customer)
+            }
+            
+            //        println(customersToday)
+            //        println(todaysCustomers)
+
             updateDailyTotals()
         }
         
@@ -133,7 +149,6 @@ class ViewController: UIViewController {
     }
     
     func updateDailyTotals() {
-        
         
         totalDollars.text = "$\(cashOnHand)"
         totalLemons.text = "\(lemonInventory) Lemons"
