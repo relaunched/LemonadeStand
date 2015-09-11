@@ -153,6 +153,10 @@ class ViewController: UIViewController {
         totalDollars.text = "$\(cashOnHand)"
         totalLemons.text = "\(lemonInventory) Lemons"
         totalIceCubes.text = "\(iceCubeInventory) Ice Cubes"
+        dailyPurchaseOfIceLabel.title = "0"
+        dailyPurchaseOfLemonsLabel.title = "0"
+        numberOfIceCubesPreferred.title = "0"
+        numberOfLemonsPreferred.title = "0"
     }
     
 //    func enoughMoneyForTheOrder() ->Bool {
