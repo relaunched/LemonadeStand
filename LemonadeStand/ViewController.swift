@@ -113,30 +113,76 @@ class ViewController: UIViewController {
     @IBAction func startDay(sender: AnyObject) {
 //        enoughMoneyForTheOrder()
         
+        var todaysInventoryCost = (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
+        var dollarsEarnedToday = 0
         
-        
-        if cashOnHand >= (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal) {
+        if cashOnHand >= todaysInventoryCost {
             
             var todaysCustomers: [Double] = []
             var customer = 0.0
             
             let customersToday = Int(arc4random_uniform(UInt32(11)))
             
+            
             lemonInventory = lemonInventory + lemonInventorySubTotal
             iceCubeInventory = iceCubeInventory + iceCubeInventorySubTotal
             cashOnHand = cashOnHand - (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
             lemonadeRatio = Double(lemonMixSubTotal) / Double(iceMixSubTotal)
             
-            for var x = 1; x < (customersToday + 1); x++ {
-                customer = (Double(arc4random_uniform(UInt32(11))) / Double(10))
-                todaysCustomers.append(customer)
+            if lemonInventory >= lemonMixSubTotal && iceCubeInventory >= iceMixSubTotal {
+            
+                for var x = 1; x < (customersToday + 1); x++ {
+                    customer = (Double(arc4random_uniform(UInt32(11))) / Double(10))
+                    todaysCustomers.append(customer)
+                }
+            
+                for customerPreference in todaysCustomers {
+                    if customerPreference < 0.4 && lemonadeRatio > 1.0 {
+//                    cashOnHand = cashOnHand + 1
+                    dollarsEarnedToday++
+                    println("You get paid $1")
+                    }
+                
+                    else if (customerPreference >= 0.4 && customerPreference < 0.6) && lemonadeRatio == 1.0 {
+//                    cashOnHand = cashOnHand + 1
+                    dollarsEarnedToday++
+                    println("You get paid $1)")
+                    }
+                
+                    else if customerPreference >= 0.6 && lemonadeRatio < 1.0 {
+//                    cashOnHand = cashOnHand + 1
+                    dollarsEarnedToday++
+                    println("You get paid $1")
+                    }
+                
+                    else {
+                        println("The customer doesn't like your lemonade and isn't paying")
+                    }
+                }
+                
+//                NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: nil, userInfo: nil, repeats: true)
+                
+                showAlertWithText(header: "Today's Summary", message: "You used \(lemonMixSubTotal) lemons and \(iceMixSubTotal) ice cubes, which costs a total of \(todaysInventoryCost). You earned \(dollarsEarnedToday) today.")
+                
+                lemonInventory = lemonInventory - lemonMixSubTotal
+                iceCubeInventory = iceCubeInventory - iceCubeInventorySubTotal
+                cashOnHand = cashOnHand + dollarsEarnedToday
+                updateDailyTotals()
+
+
             }
+            
+            else {
+                
+                showAlertWithText(header: "Warning", message: "The lemonade requires \(lemonMixSubTotal) lemons and \(iceMixSubTotal) ice cubes and you don't have enough. Please either change your mix or order quantities.")
+                
+            }
+            
             
             //        println(customersToday)
             //        println(todaysCustomers)
-
-            updateDailyTotals()
-        }
+            
+                    }
         
         else {
             
