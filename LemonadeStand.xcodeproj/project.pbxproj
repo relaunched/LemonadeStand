@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E42A3C61BA8ABF9005E8DC6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E42A3C51BA8ABF9005E8DC6 /* CoreLocation.framework */; };
+		2E42A3C81BA8AC04005E8DC6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E42A3C71BA8AC04005E8DC6 /* CoreBluetooth.framework */; };
+		2E42A3CA1BA8AC0F005E8DC6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E42A3C91BA8AC0F005E8DC6 /* SystemConfiguration.framework */; };
+		2E42A3CC1BA8AC19005E8DC6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E42A3CB1BA8AC19005E8DC6 /* Security.framework */; };
 		2E782B4B1BA1C0940012A56F /* customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E782B4A1BA1C0940012A56F /* customer.swift */; };
+		2ED272DD1BA8BA3D00EFA4F2 /* swirl_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED272DC1BA8BA3D00EFA4F2 /* swirl_sdk.framework */; };
+		2ED272DE1BA8BF7100EFA4F2 /* swirl_sdk.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2ED272DC1BA8BA3D00EFA4F2 /* swirl_sdk.framework */; };
 		2EF89CDC1B6FB6C1003AF06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF89CDB1B6FB6C1003AF06A /* AppDelegate.swift */; };
 		2EF89CDE1B6FB6C1003AF06A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF89CDD1B6FB6C1003AF06A /* ViewController.swift */; };
 		2EF89CE11B6FB6C1003AF06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF89CDF1B6FB6C1003AF06A /* Main.storyboard */; };
@@ -27,7 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E42A3C51BA8ABF9005E8DC6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2E42A3C71BA8AC04005E8DC6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2E42A3C91BA8AC0F005E8DC6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2E42A3CB1BA8AC19005E8DC6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2E42A3D01BA8AEA7005E8DC6 /* LemonadeStand-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LemonadeStand-Bridging-Header.h"; sourceTree = "<group>"; };
 		2E782B4A1BA1C0940012A56F /* customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customer.swift; sourceTree = "<group>"; };
+		2ED272DC1BA8BA3D00EFA4F2 /* swirl_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = swirl_sdk.framework; sourceTree = "<group>"; };
 		2EF89CD61B6FB6C1003AF06A /* LemonadeStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF89CDA1B6FB6C1003AF06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EF89CDB1B6FB6C1003AF06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED272DD1BA8BA3D00EFA4F2 /* swirl_sdk.framework in Frameworks */,
+				2E42A3CC1BA8AC19005E8DC6 /* Security.framework in Frameworks */,
+				2E42A3CA1BA8AC0F005E8DC6 /* SystemConfiguration.framework in Frameworks */,
+				2E42A3C81BA8AC04005E8DC6 /* CoreBluetooth.framework in Frameworks */,
+				2E42A3C61BA8ABF9005E8DC6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,11 @@
 		2EF89CCD1B6FB6C1003AF06A = {
 			isa = PBXGroup;
 			children = (
+				2ED272DC1BA8BA3D00EFA4F2 /* swirl_sdk.framework */,
+				2E42A3CB1BA8AC19005E8DC6 /* Security.framework */,
+				2E42A3C91BA8AC0F005E8DC6 /* SystemConfiguration.framework */,
+				2E42A3C71BA8AC04005E8DC6 /* CoreBluetooth.framework */,
+				2E42A3C51BA8ABF9005E8DC6 /* CoreLocation.framework */,
 				2EF89CD81B6FB6C1003AF06A /* LemonadeStand */,
 				2EF89CEE1B6FB6C1003AF06A /* LemonadeStandTests */,
 				2EF89CD71B6FB6C1003AF06A /* Products */,
@@ -79,6 +101,7 @@
 		2EF89CD81B6FB6C1003AF06A /* LemonadeStand */ = {
 			isa = PBXGroup;
 			children = (
+				2E42A3D01BA8AEA7005E8DC6 /* LemonadeStand-Bridging-Header.h */,
 				2E782B4A1BA1C0940012A56F /* customer.swift */,
 				2EF89CDB1B6FB6C1003AF06A /* AppDelegate.swift */,
 				2EF89CDD1B6FB6C1003AF06A /* ViewController.swift */,
@@ -164,6 +187,11 @@
 				TargetAttributes = {
 					2EF89CD51B6FB6C1003AF06A = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2EF89CEA1B6FB6C1003AF06A = {
 						CreatedOnToolsVersion = 6.4;
@@ -195,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED272DE1BA8BF7100EFA4F2 /* swirl_sdk.framework in Resources */,
 				2EF89CE11B6FB6C1003AF06A /* Main.storyboard in Resources */,
 				2EF89CE61B6FB6C1003AF06A /* LaunchScreen.xib in Resources */,
 				2EF89CE31B6FB6C1003AF06A /* Images.xcassets in Resources */,
@@ -346,9 +375,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/a1007621/Downloads/Swirl,
+					SDK,
+					iOS,
+					2.6/sdk,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LemonadeStand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "./LemonadeStand/LemonadeStand-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 			};
 			name = Debug;
 		};
@@ -356,9 +397,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/a1007621/Downloads/Swirl,
+					SDK,
+					iOS,
+					2.6/sdk,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LemonadeStand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "./LemonadeStand/LemonadeStand-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 			};
 			name = Release;
 		};
