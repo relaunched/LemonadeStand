@@ -16,7 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Swirl.shared().startWithDelegate(nil, key:"sEsOsRlePuBj0tgGynzRJp1B6hnwKYAFBwv6TtA7mlw5B", options:nil);
+
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        if !Swirl.shared().showContentForNotification(notification) {
+            // Handle non-Swirl local notifications here
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

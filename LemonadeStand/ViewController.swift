@@ -24,32 +24,7 @@ class ViewController: UIViewController {
     
     var lemonadeRatio = 0.0
     
-    
-    //Swirl Test
-    
-    let APP_KEY = ""
-    func application(application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [NSObject:
-        AnyObject]?) -> Bool {
-            // specify a delegate if you want optional callbacks
-            Swirl.shared().startWithDelegate(nil, key: APP_KEY, options:
-                nil);
-            
-            if application.applicationState !=
-                UIApplicationState.Background {
-                    self.viewDidLoad()
-            }
-            
-            return true
-    }
-    
-    func application(application: UIApplication,
-        didReceiveLocalNotification notification: UILocalNotification) {
-            if !Swirl.shared().showContentForNotification(notification) {
-                // Handle non-Swirl local notifications here
-            }
-    }
-    
+        
     //UI Elements
    
     @IBOutlet weak var totalDollars: UILabel!
