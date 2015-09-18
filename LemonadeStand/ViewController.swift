@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     //Swirl Test
     
-    let APP_KEY = ""
+    let APP_KEY = "sEsOsRlePuBj0tgGynzRJp1B6hnwKYAFBwv6TtA7mlw5B"
     func application(application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject:
         AnyObject]?) -> Bool {
@@ -134,7 +134,7 @@ class ViewController: UIViewController {
     @IBAction func startDay(sender: AnyObject) {
 //        enoughMoneyForTheOrder()
         
-        var todaysInventoryCost = (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
+        let todaysInventoryCost = (lemonInventorySubTotal * 2 + iceCubeInventorySubTotal)
         var dollarsEarnedToday = 0
         
         if cashOnHand >= todaysInventoryCost {
@@ -161,29 +161,29 @@ class ViewController: UIViewController {
                     if customerPreference < 0.4 && lemonadeRatio > 1.0 {
 //                    cashOnHand = cashOnHand + 1
                     dollarsEarnedToday++
-                    println("You get paid $1")
+                    print("You get paid $1")
                     }
                 
                     else if (customerPreference >= 0.4 && customerPreference < 0.6) && lemonadeRatio == 1.0 {
 //                    cashOnHand = cashOnHand + 1
                     dollarsEarnedToday++
-                    println("You get paid $1)")
+                    print("You get paid $1)")
                     }
                 
                     else if customerPreference >= 0.6 && lemonadeRatio < 1.0 {
 //                    cashOnHand = cashOnHand + 1
                     dollarsEarnedToday++
-                    println("You get paid $1")
+                    print("You get paid $1")
                     }
                 
                     else {
-                        println("The customer doesn't like your lemonade and isn't paying")
+                        print("The customer doesn't like your lemonade and isn't paying")
                     }
                 }
                 
 //                NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: nil, userInfo: nil, repeats: true)
                 
-                showAlertWithText(header: "Today's Summary", message: "You used \(lemonMixSubTotal) lemons and \(iceMixSubTotal) ice cubes, which costs a total of \(todaysInventoryCost). You earned \(dollarsEarnedToday) today.")
+                showAlertWithText("Today's Summary", message: "You used \(lemonMixSubTotal) lemons and \(iceMixSubTotal) ice cubes, which costs a total of \(todaysInventoryCost). You earned \(dollarsEarnedToday) today.")
                 
                 lemonInventory = lemonInventory - lemonMixSubTotal
                 iceCubeInventory = iceCubeInventory - iceCubeInventorySubTotal
@@ -195,7 +195,7 @@ class ViewController: UIViewController {
             
             else {
                 
-                showAlertWithText(header: "Warning", message: "The lemonade requires \(lemonMixSubTotal) lemons and \(iceMixSubTotal) ice cubes and you don't have enough. Please either change your mix or order quantities.")
+                showAlertWithText("Warning", message: "The lemonade requires \(lemonMixSubTotal) lemons and \(iceMixSubTotal) ice cubes and you don't have enough. Please either change your mix or order quantities.")
                 
             }
             
@@ -207,7 +207,7 @@ class ViewController: UIViewController {
         
         else {
             
-            showAlertWithText(header: "Warning", message: "You don't have enought money to complete your purchase. Please adjust your purchase order accordingly.")
+            showAlertWithText("Warning", message: "You don't have enought money to complete your purchase. Please adjust your purchase order accordingly.")
             
         }
         
@@ -238,7 +238,7 @@ class ViewController: UIViewController {
     
     func showAlertWithText(header: String = "Warning", message: String) {
         
-        var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
