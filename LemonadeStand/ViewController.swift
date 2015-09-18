@@ -43,6 +43,13 @@ class ViewController: UIViewController {
             return true
     }
     
+    func application(application: UIApplication,
+        didReceiveLocalNotification notification: UILocalNotification) {
+            if !Swirl.shared().showContentForNotification(notification) {
+                // Handle non-Swirl local notifications here
+            }
+    }
+    
     //UI Elements
    
     @IBOutlet weak var totalDollars: UILabel!
