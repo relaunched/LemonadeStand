@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     //Swirl Test
     
-    let APP_KEY = "sEsOsRlePuBj0tgGynzRJp1B6hnwKYAFBwv6TtA7mlw5B"
+    let APP_KEY = ""
     func application(application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject:
         AnyObject]?) -> Bool {
